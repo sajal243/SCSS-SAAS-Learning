@@ -1,0 +1,16 @@
+// Partials -- Separate file for variables or mixin. Named always contain '_' at starting  like _mixin.scss
+// Used to Reduce HochPoch in main.css file
+
+
+@mixin flexprob {
+    display: flex;                    // *4th superPower --- Repeatedly used lines write as function
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin commonCode{
+    color: rgb(235, 11, 11);
+    font-size: 5px + 30px;   
+    text-transform: capitalize;
+}

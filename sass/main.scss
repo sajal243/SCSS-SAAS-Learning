@@ -1,0 +1,52 @@
+//  SASS -- CSS    and     SCSS - CSS3
+/*
+
+NOTE : Super Powers of SCSS
+
+1. Operators
+2. Variables
+3. Nested
+4. Function or mixin (With parameter or Without parameter)
+
+*/
+
+// ** Importing Partials
+
+@import "mixin";    // Or @import "_mixin " or @import "mixin.scss"
+@import "var";      // Or  @import "_var " or @import "var.scss"
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+.main_header{
+    width: 100vw;
+    height: 100vh;
+    place-items: center;
+    @include flexprob();
+    background: $bg-color; // use of Variables
+
+    // *****  3rd superPower --- Nested ***
+    h1{
+        @include commonCode();  // ** 1st SuperPower for CSS -- operators can be used **
+
+        &:hover{
+            color: black;
+        }
+
+        &::after{
+            content: "World!";
+        }
+        
+
+    }
+
+    
+    p{
+        @include commonCode();
+    }
+}

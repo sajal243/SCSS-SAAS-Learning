@@ -1,0 +1,57 @@
+/*
+
+NOTE : Super Powers of SCSS
+
+1. Operators
+2. Variables
+3. Nested
+4. Function or mixin (With parameter or Without parameter)
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main_header {
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #029da8;
+}
+
+.main_header h1 {
+  color: #eb0b0b;
+  font-size: 35px;
+  text-transform: capitalize;
+}
+
+.main_header h1:hover {
+  color: black;
+}
+
+.main_header h1::after {
+  content: "World!";
+}
+
+.main_header p {
+  color: #eb0b0b;
+  font-size: 35px;
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=main.css.map */
